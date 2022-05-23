@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:paddingVertical="@dimen/margin_padding_small">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <View
+        android:id="@+id/view_header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_size_header"
+        android:layout_below="@id/top_bar"
+        android:background="@color/light_gray" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_header_bg"
+        android:layout_marginTop="-150dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding_xxlarge">
+
+
+        <com.nnss.dev.cftest.commons.utils.CircularImageView
+            android:id="@+id/img_profile_pic"
+            android:layout_width="@dimen/view_size_header"
+            android:layout_height="@dimen/view_size_header"
+            android:src="@drawable/ic_user" />
+
+        <TextView
+            android:id="@+id/text_name"
+            style="@style/Text.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="@dimen/margin_padding_normal"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/text_size_large" />
+
+
+        <TextView
+            android:id="@+id/text_user_id"
+            style="@style/Text.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_edit"
+        style="@style/Text.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_logout"
+        android:layout_marginHorizontal="@dimen/margin_padding_xlarge"
+        android:layout_marginBottom="@dimen/margin_padding_normal"
+        android:background="@drawable/bg_button_secondary"
+        android:backgroundTint="@color/secondary"
+        android:text="Edit Profile Photo"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/Text.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/margin_padding_xlarge"
+        android:layout_marginBottom="@dimen/margin_padding_xlarge"
+        android:background="@drawable/bg_button"
+        android:text="Logout"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

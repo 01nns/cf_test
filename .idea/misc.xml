@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/dev/BFTA/app/src/main/res/drawable/bg_button.xml" value="0.1795" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/drawable/bg_button_secondary.xml" value="0.1795" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/drawable/bg_edit_text.xml" value="0.1" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/drawable/bg_posts.xml" value="0.1" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/drawable/bg_rectactangle_rounded.xml" value="0.16" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/drawable/bg_rectactangle_rounded_bottom.xml" value="0.1" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/drawable/bg_rectactangle_rounded_bottom_primary.xml" value="0.1" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/drawable/bg_rectactangle_rounded_top].xml" value="0.1175" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/drawable/ic_history.xml" value="0.16" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/app_bar_main.xml" value="0.22" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/dialog_loader.xml" value="0.17552083333333332" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/fragment_calculator.xml" value="0.10666666666666667" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/fragment_login.xml" value="0.22" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/fragment_new_post.xml" value="0.14666666666666667" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/fragment_register.xml" value="0.22" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/fragment_update_pic.xml" value="0.22" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/fragment_user.xml" value="0.14666666666666667" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/fragment_view_post.xml" value="0.22" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/item_calc_history.xml" value="0.17552083333333332" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/item_comment.xml" value="0.36302083333333335" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/item_country.xml" value="0.17552083333333332" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/item_posts.xml" value="0.17552083333333332" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/layout/shimmer_placeholder.xml" value="0.14583333333333334" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/menu/activity_main_drawer.xml" value="0.17552083333333332" />
+        <entry key="..\:/dev/BFTA/app/src/main/res/menu/main.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

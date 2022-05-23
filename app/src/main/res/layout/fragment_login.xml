@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/margin_padding_small"
+        android:elevation="@dimen/view_elevation_default"
+        android:outlineSpotShadowColor="@color/primary"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Text.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:layout_marginVertical="@dimen/margin_padding_large"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/margin_padding_xxnormal"
+            android:textSize="@dimen/text_size_xxxlarge" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:padding="@dimen/margin_padding_xlarge"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/et_username"
+            style="@style/Text.Input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_size_normal"
+            android:background="@drawable/bg_edit_text"
+            android:elevation="@dimen/view_elevation_default"
+            android:hint="Username"
+            android:inputType="text"
+            android:outlineSpotShadowColor="@color/primary"
+            android:paddingHorizontal="@dimen/margin_padding_normal" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/Text.Input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_size_normal"
+            android:layout_marginTop="@dimen/margin_padding_normal"
+            android:background="@drawable/bg_edit_text"
+            android:elevation="@dimen/view_elevation_default"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:outlineSpotShadowColor="@color/primary"
+            android:paddingHorizontal="@dimen/margin_padding_normal" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Text.Title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_size_normal"
+            android:layout_marginTop="@dimen/margin_padding_xxnormal"
+            android:background="@drawable/bg_button"
+            android:paddingHorizontal="@dimen/margin_padding_xxlarge"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_large">
+
+            <TextView
+                style="@style/Text.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?" />
+
+            <Button
+                android:id="@+id/btn_reg"
+                style="@style/Text.Button"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:paddingHorizontal="0dp"
+                android:textColor="@color/primary" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

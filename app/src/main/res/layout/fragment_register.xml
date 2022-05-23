@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/margin_padding_small"
+        android:elevation="@dimen/view_elevation_default"
+        android:outlineSpotShadowColor="@color/primary"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            style="@style/Text.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create account"
+            android:layout_marginVertical="@dimen/margin_padding_normal"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/margin_padding_xxnormal"
+            android:textSize="@dimen/text_size_xxxlarge" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding_xlarge"
+        android:layout_weight="1">
+
+
+    <EditText
+        android:id="@+id/et_username"
+        style="@style/Text.Title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size_normal"
+        android:elevation="@dimen/view_elevation_default"
+        android:outlineSpotShadowColor="@color/primary"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingHorizontal="@dimen/margin_padding_normal" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/Text.Title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size_normal"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:elevation="@dimen/view_elevation_default"
+        android:outlineSpotShadowColor="@color/primary"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/margin_padding_normal" />
+
+    <EditText
+        android:id="@+id/et_firstname"
+        style="@style/Text.Title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size_normal"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:elevation="@dimen/view_elevation_default"
+        android:outlineSpotShadowColor="@color/primary"
+        android:background="@drawable/bg_edit_text"
+        android:hint="First Name"
+        android:inputType="text"
+        android:paddingHorizontal="@dimen/margin_padding_normal" />
+
+    <EditText
+        android:id="@+id/et_lastname"
+        style="@style/Text.Title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_size_normal"
+        android:elevation="@dimen/view_elevation_default"
+        android:outlineSpotShadowColor="@color/primary"
+        android:layout_marginTop="@dimen/margin_padding_normal"
+        android:background="@drawable/bg_edit_text"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:paddingHorizontal="@dimen/margin_padding_normal" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/Text.Title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_size_normal"
+        android:layout_marginTop="@dimen/margin_padding_xxnormal"
+        android:paddingHorizontal="@dimen/margin_padding_xxlarge"
+        android:background="@drawable/bg_button"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

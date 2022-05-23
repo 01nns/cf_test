@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:background="@color/primary"
+        android:paddingVertical="@dimen/margin_padding_small"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding_normal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <com.nnss.dev.cftest.commons.utils.CircularImageView
+                android:id="@+id/img_profile_pic"
+                android:layout_width="@dimen/view_size_xlarge"
+                android:layout_height="@dimen/view_size_xlarge"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_padding_normal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text_name"
+                    style="@style/Text.Header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_size_xlarge" />
+
+                <TextView
+                    android:id="@+id/text_username"
+                    style="@style/Text.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_xxnormal" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/text_date_created"
+        style="@style/Text.Body1"
+        android:layout_width="match_parent"
+        android:gravity="end"
+        android:textColor="@color/text_gray"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_xnormal"
+        android:layout_marginHorizontal="@dimen/margin_padding_xnormal"
+        android:layout_marginTop="@dimen/margin_padding_normal" />
+
+    <TextView
+        android:id="@+id/text_post"
+        style="@style/Text.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_xxnormal"
+        android:hint="Your Post Here"
+        android:layout_margin="@dimen/margin_padding_xnormal" />
+
+
+    <TextView
+        android:id="@+id/text_all_comments"
+        style="@style/Text.Title"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_xxlarge"
+        android:textSize="@dimen/text_size_xnormal"
+        android:hint="All Comments"
+        android:layout_margin="@dimen/margin_padding_xnormal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_padding_xxlarge"
+        android:visibility="gone"
+        android:id="@+id/rv_comments"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/empty"
+        style="@style/Text.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_xxnormal"
+        android:hint="No comments"
+        android:elevation="@dimen/view_elevation_default"
+        android:outlineSpotShadowColor="@color/primary"
+        android:layout_margin="@dimen/margin_padding_xnormal" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_comment"
+            style="@style/Text.Body1"
+            android:hint="Your comment here"
+            android:textColorHint="@color/text_gray"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_padding_small"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btn_add_comment"
+            android:text="Comment"
+            android:background="@drawable/bg_button"
+            android:layout_margin="@dimen/margin_padding_small"
+            style="@style/Text.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
